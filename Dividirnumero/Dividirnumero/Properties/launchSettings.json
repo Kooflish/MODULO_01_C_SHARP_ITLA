@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Dividirnumero": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
