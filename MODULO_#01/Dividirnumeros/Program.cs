@@ -1,17 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Dividirnumeros
+class ProgramaDivision
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
+        try
         {
-            //La siguiente linea escribe en la consola
-            Console.WriteLine("Hello Repo");
+            Console.Write("Introduce el primer número: ");
+            double numero1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Introduce el segundo número: ");
+            double numero2 = Convert.ToDouble(Console.ReadLine());
+
+            if (numero2 == 0)
+            {
+                Console.WriteLine("Error: No se puede dividir entre cero.");
+            }
+            else
+            {
+                double resultado = numero1 / numero2;
+                Console.WriteLine("Resultado de la división: " + resultado);
+            }
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Error: Debes introducir números válidos.");
         }
     }
 }
